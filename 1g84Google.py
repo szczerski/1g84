@@ -22,7 +22,7 @@ creds = service_account.Credentials.from_service_account_file(
     SERVICE_ACCOUNT_FILE, scopes=SCOPES
 )
 
-SPREADSHEET_ID = "1GbNCz0vv7o9p_kKRL4RuZHvQpUYSLF0I4mF116xSLWU"
+SPREADSHEET_ID = ""
 
 service = build("sheets", "v4", credentials=creds)
 sheet = service.spreadsheets()
@@ -248,3 +248,4 @@ def start_script(
 
 
 start_script()
+
